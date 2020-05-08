@@ -270,7 +270,7 @@ a{
     #body{
         display: grid;
         grid-template-columns: 5vw 20vw 70vw 5vw;
-        grid-template-rows: 2.5vw 4vw 2.5vw 35vw 7vw 60vw 95vw 40vw 35vw 20vw 60vw 40vw;
+        grid-template-rows: 2.5vw 4vw 2.5vw 35vw 7vw 60vw 95vw 40vw 35vw 20vw 80vw 20vw;
         overflow: hidden;
     }
     #articletext{
@@ -314,5 +314,9 @@ a{
 
     #menubarbuttons{
         grid-column-start: 3;
+    }
+    
+    #footer{
+        font-size: 3vw;
     }
 }
