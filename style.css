@@ -34,6 +34,7 @@
     display: grid;
     grid-template-columns: 5vw 30vw 3vw 57vw 5vw;
     grid-template-rows: 2.5vw 4vw 2.5vw 35vw 7vw 20vw 45vw 17vw 15vw 10vw 30vw 20vw;
+    overflow: hidden;
 }
 
 #menubar{
@@ -95,14 +96,12 @@ a{
 }
 
 #title{
-    width: 20vw;
     color: #293134;
     font-size: 3vw;
     font-family: Gotham-Bold;
 }
 
 #date{
-    width: 20vw;
     color: #293134;
     font-size: 1.5vw;
     font-family: Gotham-Light;
@@ -154,6 +153,7 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 #edwardsnowden{
@@ -181,4 +181,138 @@ a{
     padding: 1vw;
     display: flex;
     align-items: center;
+}
+
+[class="64"]{
+    grid-row-start : 6; 
+    grid-column-start: 4;
+}
+
+[class="74"]{
+    grid-row-start : 7; 
+    grid-column-start: 4;
+}
+
+[class="82"]{
+    grid-row-start : 8; 
+    grid-column-start: 2;
+}
+
+[class="92"]{
+    grid-row-start : 9; 
+    grid-column-start: 2;
+}
+
+[class="94"]{
+    grid-row-start : 9; 
+    grid-column-start: 4;
+}
+
+[class="104"]{
+    grid-row-start : 10; 
+    grid-column-start: 4;
+}
+
+[class="114"]{
+    grid-row-start : 11; 
+    grid-column-start: 4;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    #facebookimg{
+        grid-column-start: 3;
+    }
+
+    [class="64"]{
+        grid-row-start : 6; 
+        grid-column: 4/2;
+    }
+    
+    [class="74"]{
+        grid-row-start : 7; 
+        grid-column-start: 3;
+    }
+    
+    [class="82"]{
+        grid-row-start : 8; 
+        grid-column-start: 3;
+    }
+    
+    [class="92"]{
+        grid-row-start : 9; 
+        grid-column-start: 3;
+    }
+    
+    [class="94"]{
+        grid-row-start : 9; 
+        grid-column-start: 2;
+    }
+    
+    [class="104"]{
+        grid-row-start : 10; 
+        grid-column-start: 3;
+    }
+    
+    [class="114"]{
+        grid-row-start : 11; 
+        grid-column-start: 3;
+    }
+
+    #body{
+        display: grid;
+        grid-template-columns: 5vw 20vw 70vw 5vw;
+        grid-template-rows: 2.5vw 4vw 2.5vw 35vw 7vw 60vw 95vw 40vw 35vw 20vw 60vw 40vw;
+        overflow: hidden;
+    }
+    #articletext{
+        font-size: 2.5vw;
+    }
+    #articleintro{
+        font-size: 4vw;
+    }
+    #articlequote{
+        font-size: 3vw;
+    }
+
+    #facebookimg{
+        width: 30vw;
+        grid-column-start: 2;
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+
+    #titletext{
+        grid-column-start: 3;
+        grid-row-start: 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 5vw;
+        animation: 1s ease-out 0s 1 slideInFromRight;
+    }
+    
+    #title{
+        position: relative;
+        left: 8vw;
+        font-size: 6vw;
+        font-family: Gotham-Bold;
+    }
+    
+    #date{
+        position: relative;
+        left: 8vw;
+        font-size: 3vw;
+    }
+
+    #menubarbuttons{
+        grid-column-start: 3;
+    }
 }
