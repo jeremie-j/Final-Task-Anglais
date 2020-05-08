@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: Gotham-Bold;
+    src: url(Gotham-Bold.otf);
+}
+
+@font-face{
+    font-family: Gotham-Light;
+    src: url(Gotham-Light.otf);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes slideInFromRight {
+0% {
+    transform: translateX(100%);
+}
+100% {
+    transform: translateX(0);
+}
+}
+  
+#body{
+    display: grid;
+    grid-template-columns: 5vw 30vw 3vw 57vw 5vw;
+    grid-template-rows: 2.5vw 4vw 2.5vw 35vw 7vw 20vw 45vw 17vw 15vw 10vw 30vw 20vw;
+}
+
+#menubar{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#Unvido-Logo-Titre{
+    width: 10vw;
+    border: none;
+}
+
+#menubar{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#menubarbuttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5vw ;
+    font-family: Gotham-Light;
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+a{
+    text-decoration: none ;
+}
+
+#signinbutton{
+    font-family: "Gotham-Light";
+    border: none;
+    padding: 1.5vw;
+    text-align: center;
+    font-size: 1.5vw;
+    border-radius: 1px;
+    background-color: #5ffcbc;
+    color: white;
+    box-shadow: 0px 7px 20px -9px #293134;
+    outline:0;
+}
+
+#signinbutton:hover{
+    transform: translateY(3px);
+    transition: 0.1s ease;
+}
+
+#titletext{
+    grid-column-start: 2;
+    grid-row-start: 4;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    border-bottom: 0.1vw solid #293134;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#title{
+    width: 20vw;
+    color: #293134;
+    font-size: 3vw;
+    font-family: Gotham-Bold;
+}
+
+#date{
+    width: 20vw;
+    color: #293134;
+    font-size: 1.5vw;
+    font-family: Gotham-Light;
+}
+
+#facebookimg{
+    width: 57vw;
+    grid-column-start: 4;
+    grid-row-start: 4;
+    align-self: center;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+#articleintro{
+    color: #293134;
+    font-size: 2vw;
+    font-family: Gotham-Bold;
+    text-align: justify;
+    padding: 1vw;
+    align-self: center;
+}
+
+#articletext{
+    text-align: justify;
+    color: #293134;
+    font-size: 1.5vw;
+    font-family: Gotham-Light;
+    padding: 1vw;
+    align-self: center;
+}
+
+#articlequote{
+    text-align: justify;
+    color: #293134;
+    font-size: 1.5vw;
+    font-family: Gotham-Bold;
+    padding: 1vw;
+    align-self: center;
+}
+
+#amazon-echo{
+    grid-row-start : 7;
+    grid-column-start: 2;
+    color: #293134;
+    font-size: 1.5vw;
+    font-family: Gotham-Light;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#edwardsnowden{
+    grid-row-start : 11;
+    grid-column-start: 2;
+    color: #293134;
+    font-size: 1.5vw;
+    font-family: Gotham-Light;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer{
+    text-align: justify;
+    grid-row-start : 12;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: #293134;
+    color: white;
+    font-size: 1.3vw;
+    font-family: Gotham-Light;
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+}
